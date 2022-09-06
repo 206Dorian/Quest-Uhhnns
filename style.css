@@ -4,7 +4,7 @@ Also i'm leaving extra lines at the moment ot i can read my code easier*/
 body { 
     background-color:turquoise;
 color: rgb(17, 66, 109);
-background-image: linear-gradient(turquoise, white, turquoise, blue)
+background-image: linear-gradient(rgb(65, 65, 239) ,rgb(37, 200, 225), rgb(45, 198, 228), blue)
 
 
 }
