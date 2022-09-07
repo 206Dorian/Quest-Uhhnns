@@ -1,50 +1,53 @@
-/*made the background gradient to mimic ocean colors
-Also i'm leaving extra lines at the moment ot i can read my code easier*/
+/*made the background gradient */
+
 
 body { 
-    background-color:turquoise;
-color: rgb(17, 66, 109);
-background-image: linear-gradient(rgb(65, 65, 239) ,rgb(37, 200, 225), rgb(45, 198, 228), blue)
+color: rgb(17, 66, 109);  
+ background-image: linear-gradient(rgb(65, 65, 239) ,rgb(37, 200, 225), rgb(45, 198, 228), rgb(65, 65, 214))
 
+} 
 
-}
-/*Centered text and made bigger*/
 h1{
 text-align: center;
-font-size: 70px;
+font-size:50px;
 text-shadow: navy;
 text-shadow: 30px;
 }
 
 nav {
-    background-color: blue;
+    background-color: rgb(36, 182, 231);
     border: 15px solid rgb(247, 244, 244);
     text-align: center;
     
-}
+} 
 
 p {
     font-size: 30px;
 }
 
 .container {
-    display: block;
-    background-color: rgb(64, 203, 190);
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(130, 226, 217);
+    padding: 20px, 20px;
+    
 }
 
 /*Changed boxes to buttons on nav bar, was easier and i liked the effect better*/
 button
 {
-background-color: gray ;
-color: white;
-width: 275px;
-height: 100px;
+background-color: rgb(235, 134, 235) ;
+color: rgb(10, 9, 9);
+font-size: 30px;
+width: 50%;
+height: 150px;
 margin: 20px 40px;
-box-shadow: 30px, 30px, 30px;
+border-radius: 15px;
+box-shadow: 30px;
 }
 
-/*  */
+
 
 main{
 display: flex;
@@ -58,36 +61,11 @@ div{
     flex-direction: column;
     padding: 60px;
     background-color: whitesmoke;
-    box-sizing: border-box 30px;
+    box-sizing: border-box 20px;
     border: 8px solid rgb(7, 7, 7);
-    width: 25%;
+    width: 60%;
     font-size: 30px;
     text-align: center;
-    
-}
-
-#app-1{
-    background-color: rgb(112, 172, 172);
-    width: 50%;
-    display: block;
-}
-
-#app-2{
-background-color: rgb(95, 166, 207);
-
-}
-
-#app-3{
-background-color: rgb(95, 166, 207);
-
-}
-
-
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
 }
 
 @media screen and (max-width: 992px) {
@@ -101,12 +79,11 @@ img{
   
   /* Looked at this on my phone and really loved the effect and sizing of everything*/
   @media screen and (max-width: 768px) {
+    
     button{
       width: 50%;
 
     }
-    
-
   }
 
   main {
