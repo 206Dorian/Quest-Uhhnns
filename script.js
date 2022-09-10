@@ -1,48 +1,69 @@
-const questuuhhnns = document.querySelector(#quest-uuhhnns);
+const questuuhhnns = document.querySelector(#quest - uuhhnns);
 const choices = Array.from(document.querySelector("choice-text"));
 
-function todaysStuff(){
+let currentQuestUuhhnns { }
 console.log("");
-console.log("");
-console.log("");
-console.log("");
-}
-
-todaysStuff();
 
 
+let question = []
+  question: "who is the hosts of Uuhhnn"
+  option1: "A Trixie"
+  option2: "B Katya"
+  option3: "C RuPaul"
+  option4: "D Katya & Trixie"
+  answer: 4
+
+
+  question: "who is the hosts of Uuhhnn"
+  option1: "A Trixie"
+  option2: "B Katya"
+  option3: "C RuPaul"
+  option4: "D Katya & Trixie"
+  answer: 4
+
+
+  question: "who is the hosts of Uuhhnn"
+  option1: "A Trixie"
+  option2: "B Katya"
+  option3: "C RuPaul"
+  option4: "D Katya & Trixie"
+  answer: 4
+  
+
+  question: "who is the hosts of Uuhhnn"
+  option1: "A Trixie"
+  option2: "B Katya"
+  option3: "C RuPaul"
+  option4: "D Katya & Trixie"
+  answer: 4
+
+
+  
+  question: "who is the hosts of Uuhhnn"
+  option1: "A Trixie"
+  option2: "B Katya"
+  option3: "C RuPaul"
+  option4: "D Katya & Trixie"
+answer: 4
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*var timerEl = document.getElementById('countdown');
+var timerEl = document.getElementById('countdown');
 var mainEl = document.getElementById('main');
 
 
 var message =
-  'Some say the world will end in 🔥, Some say in ice. From what I’ve tasted of desire, I hold with those who favor fire. But if it had to perish twice, I think I know enough of hate. To say that for destruction ice, Is also great, And would suffice.';
+  'Hey Queen, are you ready';
 var words = message.split(' ');
 
 // Timer that counts down from 5
 function countdown() {
   var timeLeft = 5;
 
-  // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
+  
   var timeInterval = setInterval(function () {
-    // As long as the `timeLeft` is greater than 1
+  
     if (timeLeft > 1) {
-      // Set the `textContent` of `timerEl` to show the remaining seconds
       timerEl.textContent = timeLeft + ' seconds remaining';
       // Decrement `timeLeft` by 1
       timeLeft--;
@@ -58,7 +79,7 @@ function countdown() {
       // Call the `displayMessage()` function
       displayMessage();
     }
-  }, 1000);
+  }, 5000);
 }
 
 // Displays the message one word at a time
@@ -79,4 +100,4 @@ function displayMessage() {
   }, 1000);
 }
 
-countdown();*/
+countdown();* /

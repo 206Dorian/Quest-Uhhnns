@@ -1,7 +1,9 @@
+
 /*made the background gradient */
 body { 
 color: rgb(17, 66, 109);  
  background-image: linear-gradient(rgb(65, 65, 239) ,rgb(37, 200, 225), rgb(45, 198, 228), rgb(65, 65, 214))
+ 
 
 } 
 
@@ -21,6 +23,7 @@ nav {
 
 p {
     font-size: 27px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .container {
@@ -30,6 +33,14 @@ p {
     background-color: rgb(130, 226, 217);
     padding: 10px,10px;
     
+}
+
+.choice-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(237, 66, 143);
+  
 }
 
 /*Changed boxes to buttons on nav bar, was easier and i liked the effect better*/
@@ -45,12 +56,13 @@ border-radius: 25px;
 box-shadow: 40px;
 }
 
-button:hover {background-color: #3e8e41
-
+#highscore-button {
+  background-color: #3e8e41
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
+} */
+
 
 
 main{
