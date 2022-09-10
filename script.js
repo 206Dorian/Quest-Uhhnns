@@ -1,10 +1,11 @@
-const name = "Dorian";
+const questuuhhnns = document.querySelector(#quest-uuhhnns);
+const choices = Array.from(document.querySelector("choice-text"));
 
 function todaysStuff(){
-console.log("get dressed");
-console.log("fuck around");
-console.log("find out");
-console.log("stress out");
+console.log("");
+console.log("");
+console.log("");
+console.log("");
 }
 
 todaysStuff();
