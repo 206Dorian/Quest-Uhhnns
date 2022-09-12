@@ -21,7 +21,6 @@ var question = [
   option4: "D Katya & Trixie",
   answer: 4
   },
-
   {
   question: "Which queen won their AllStar season",
   option1: "A Trixie",
@@ -38,7 +37,6 @@ var question = [
   option4: "D NPR",
   answer: 2
 },
-
 {
   question: "Who is a bigger mess?",
   option1: "A Trixie",

@@ -1,9 +1,9 @@
 # JS-Coding-Quizz-
-timed code quiz game 
+Timed Code Quiz Qame  "Quest-Uuhhnns"
 
 This was a very challenging project, I still need to fix a few things.  
 
-Having said that I thought it would be fun to do a quiz about two of my favorite drag queens, Trixie Mattel and Katya from Rupauls Drag Race and their show called "Uuuhhhnnn", Hence the title "Quest-Uuhhnns".  Before I add too much information or images of them I am looking into what I need to add to my license section. 
+Having said that I thought it would be fun to do a quiz about two of my favorite drag queens, Trixie Mattel and Katya from Rupauls Drag Race and their show called "Uuuhhhnnn", hence the title "Quest-Uuhhnns".  Before I add too much information or images of them I am looking into what I need to add to my license section. 
 
 Stay Tuned for more updates and bug fixes this week!
 
