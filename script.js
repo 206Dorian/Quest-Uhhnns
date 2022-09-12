@@ -1,5 +1,5 @@
 
-var startButton = document.querySelector(".startbutton");
+var startClock = document.querySelector("#startbutton");
 
 var timeLeft = 3;
 
@@ -7,12 +7,12 @@ var questuuhhnns = document.querySelector("#quest-uuhhnns");
 
 var choices = Array.from(document.querySelector("choice-text"));
 
-var timerEl = document.querySelector('.timer');
-var mainEl = document.querySelector('main');
+var timerEl = document.querySelector(".timer");
+var mainEl = document.querySelector("main");
 
-let currentQuestUuhhnns 
-let answer = true
-let question = [
+var currentQuestUuhhnns 
+var answer = true
+var question = [
   {
   question: "who are the hosts of Uuhhnn",
   option1: "A Trixie",
@@ -59,38 +59,19 @@ answer: 4
 ]
 var score = 100
 
-startButton.addEventListener("click", countdown);
+startClock.addEventListener("click", startTimer);
 
-function countdown() {
-  var timerInterval = setInterval(function () {
-
+function startTimer() {
+ var timerInterval = setInterval(function () {
  timeLeft--;
  timerEl.textContent = timeLeft + "Time Left"
   if (timeLeft === 0){
     clearInterval(timerInterval)
-    return
+    return;
   }
 }, 
   
   1000);
 }
+console.log(startClock)
 
-// // Displays the message one word at a time
-// function displayMessage() {
-//   var wordCount = 0;
-
-//   // Uses the `setInterval()` method to call a function to be executed every 1000 milliseconds
-//   var msgInterval = setInterval(function () {
-//     // If there are no more words left in the message
-//     if (words[wordCount] === undefined) {
-//       // Use `clearInterval()` to stop the timer
-//       clearInterval(msgInterval);
-//     } else {
-//       // Display one word of the message
-//       mainEl.textContent = words[wordCount];
-//       wordCount++;
-//     }
-//   }, 1000);
-// }
-startButton.setAttribute("style", "font-size:50px");
-// countdown();
