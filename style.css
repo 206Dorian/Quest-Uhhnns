@@ -21,10 +21,10 @@ h2{
   background-color: rgb(204, 204, 232);
 }
 
-nav {
+/* nav {
     background-color: rgb(36, 182, 231);
     border: 15px solid rgb(247, 244, 244);
-    text-align: center;
+    text-align: center; */
     
 } 
 
@@ -39,7 +39,7 @@ p {
     justify-content: center;
     background-color: rgb(130, 226, 217);
     padding: 10px,10px;
-    
+    margin:auto;  
 }
 
 .choice-container {
@@ -47,20 +47,18 @@ p {
   align-items: center;
   justify-content: center;
   background-color: rgb(237, 66, 143);
-  
 }
-
 
 button
 {
 background-color: rgb(200, 128, 179) ;
 color: rgb(10, 9, 9);
 font-size: 30px;
-width: 30%;
-height: 100px;
-margin: 20px 20px;
-border-radius: 25px;
-box-shadow: 40px;
+width: 66%;
+height: 66%;
+margin: 10px 10px;
+border-radius: 20px;
+box-shadow: 30px;
 }
 
 button:hover {
@@ -68,8 +66,8 @@ background-color: rgb(221, 23, 135);
 box-shadow: 15px;
 }
 
-/* 
-#highscore-button {
+
+#scores-button {
   background-color: #3e8e41
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -90,7 +88,7 @@ div{
     flex-direction: column;
     padding: 10px;
     align-items: center;
-    box-sizing: border-box 10px;
+     box-sizing: border-box 10px; 
     border: 4px solid rgb(7, 7, 7);
     width: 60%;
     font-size: 20px;
