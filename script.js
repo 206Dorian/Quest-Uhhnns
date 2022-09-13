@@ -1,3 +1,4 @@
+console.log("Hello From Trixie & Katya!");
 
 var startClock = document.querySelector("#startbutton");
 
