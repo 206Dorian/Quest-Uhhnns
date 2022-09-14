@@ -1,6 +1,6 @@
-// var startClock = document.querySelector("#startbutton");
+var startTimer = document.querySelector("#startbutton");
 
-// var timeLeft = 3;
+var timeLeft = 3;
 
 var question = document.getElementById("questions");
 
@@ -13,8 +13,9 @@ var answer = true
 
 var points = 0;
 
-var questionNum
-var questUuhhnns = [
+var questionCount = 0;
+
+var questions = [
   {
   question: "Who are the hosts of Uuhhnn",
   option1: "A Trixie",
@@ -72,14 +73,36 @@ answer: 4
   answer: 5
     },
 ]
+
+
 var score = 100
 
+startGame = () => {
+questionCount = 0;
+score = 0
+availableQuestions = [...questions]
+console.log(avaialableQuestions);
+getNewQuestion();
+};
+
+getNewQuestion = () => {
+questionCount++;
+const questionIndex = Math.floor(Math.random() * avaialableQuestions.length);
+currentQuestion = avaialableQuestions [questionIndex];
+question.innerText = currentQuestion;
+}
+
+
+choices.forEach( choice => {
+var number = choice.dataset["number"];
+choice.innerText = currentQuestions["choice + number"];
+})
 
 
 var timerEl = document.querySelector(".timer");
 var mainEl = document.querySelector("main");
 
-startClock.addEventListener("click", startTimer);
+startTimer.addEventListener("click", startTimer);
 
 function startTimer() {
  var timerInterval = setInterval(function () {
@@ -93,5 +116,7 @@ function startTimer() {
   
   1000);
 }
-console.log(startClock)
 
+function startGame(){ 
+};
+console.log(startGame)
