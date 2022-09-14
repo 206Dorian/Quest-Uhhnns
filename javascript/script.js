@@ -2,7 +2,7 @@ var startTimer = document.querySelector("#startbutton");
 
 var timeLeft = 3;
 
-var question = document.getElementById("questions");
+// var question = document.getElementById("questions");
 
 var choices = Array.from(document.getElementsByClassName("choices"));
 console.log(choices);
