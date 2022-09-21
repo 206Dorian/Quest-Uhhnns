@@ -1,4 +1,4 @@
-var startTimer = document.querySelector("#startbutton");
+var startButton = document.querySelector("#startbutton");
 
 var timeLeft = 3;
 
@@ -18,20 +18,16 @@ var questionCount = 0;
 var questions = [
   {
   question: "Who are the hosts of Uuhhnn",
-  option1: "A Trixie",
-  option2: "B Katya",
-  option3: "C RuPaul",
-  option4: "D Katya & Trixie",
-  option5: "E Tattiana",
-  answer: 4
+  options: ["A Trixie", "B Katya","C RuPaul","D Katya & Trixie","E Tatiana"],
+  answer: "D Katya & Trixie"
   },
   {
   question: "Which queen won their AllStar season",
   option1: "A Trixie",
   option2: "B Katya",
-  option3: "C Detox",
+  option3: "C Rupaul",
   option4: "D Katya & Trixie",
-  option5: "E Tattiana",
+  option5: "E Tatiana",
   answer: 1
   },
 {
@@ -44,12 +40,12 @@ var questions = [
   answer: 2
 },
 {
-  question: "Who is a bigger mess?",
+  question: "Who's persona is Russian?",
   option1: "A Trixie",
   option2: "B Katya",
   option3: "C RuPaul",
   option4: "D Katya & Trixie",
-  option5: "E Tattiana",
+  option5: "E Tatiana",
   answer: 2
 },
 
@@ -102,7 +98,7 @@ choice.innerText = currentQuestions["choice + number"];
 var timerEl = document.querySelector(".timer");
 var mainEl = document.querySelector("main");
 
-startTimer.addEventListener("click", startTimer);
+
 
 function startTimer() {
  var timerInterval = setInterval(function () {
@@ -118,5 +114,15 @@ function startTimer() {
 }
 
 function startGame(){ 
+  startTimer()
+  //in startGame remove class hide from question/answer container, needs an id in div, then hide start 
 };
 console.log(startGame)
+
+startButton.addEventListener("click", startGame);
+
+//when timer starts questions appear, startGame 
+
+//update question content create var in JS, update text content 
+
+//tell Js which element to change, then update text cont accoringly
