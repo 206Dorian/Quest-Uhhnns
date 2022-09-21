@@ -1,6 +1,6 @@
 var startButton = document.querySelector("#startbutton");
 
-var timeLeft = 3;
+var timeLeft = 90;
 
 // var question = document.getElementById("questions");
 
@@ -18,55 +18,38 @@ var questionCount = 0;
 var questions = [
   {
   question: "Who are the hosts of Uuhhnn",
-  options: ["A Trixie", "B Katya","C RuPaul","D Katya & Trixie","E Tatiana"],
+  choices: ["A Trixie", "B Katya", "C RuPaul", "D Katya & Trixie", "E Tatiana"],
   answer: "D Katya & Trixie"
   },
+
   {
   question: "Which queen won their AllStar season",
-  option1: "A Trixie",
-  option2: "B Katya",
-  option3: "C Rupaul",
-  option4: "D Katya & Trixie",
-  option5: "E Tatiana",
-  answer: 1
+  choices: ["A Trixie", "B Katya", "C Rupaul", "D Katya & Trixie", "E Tatiana"],
+  answer: "A Trixie"
   },
+
 {
   question: "What streaming service is Uuhhnn on?",
-  option1: "A The BBC",
-  option2: "B WOW Presents Plus",
-  option3: "C MSNBC",
-  option4: "D NPR",
-  option5: "E Tatianna",
-  answer: 2
+  choices: ["A The BBC", "B WOW Presents Plus", "C MSNBC", "D NPR","E Tatianna"],
+  answer: "B WOW Presents Plus"
 },
+
 {
   question: "Who's persona is Russian?",
-  option1: "A Trixie",
-  option2: "B Katya",
-  option3: "C RuPaul",
-  option4: "D Katya & Trixie",
-  option5: "E Tatiana",
-  answer: 2
+  choices: ["A Trixie", "B Katya", "C RuPaul", "D Katya & Trixie", "E Tatiana"],
+  answer: "B Katya"
 },
 
   {
   question: "Who made these queen famous?",
-  option1: "A Lady Bunny",
-  option2: "B Michelle Visage",
-  option3: "C RuPaul",
-  option4: "D Themselves",
-  option5: "E Tattiana",
-answer: 4
+  choices:["A Lady Bunny", "B Michelle Visage", "C RuPaul", "D Themselves", "E Tattiana"],
+answer: "D Themselves"
   },
 
   {
     question: "Who coined the phrase *Choices*?",
-    option1: "A Lady Bunny",
-    option2: "B Michelle Visage",
-    option3: "C RuPaul",
-    option4: "D Themselves",
-    option5: "E Tattiana",
-  answer: 5
+    choices: ["A Lady Bunny", "B Michelle Visage", "C RuPaul", "D Themselves", "E Tattiana"],
+  answer: "E Tattiana",
     },
 ]
 
