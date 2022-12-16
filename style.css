@@ -43,12 +43,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(237, 66, 143);
+  background-color: rgb(67, 166, 215);
 }
 
 button
 {
-background-color: rgb(200, 128, 179) ;
+background-color: rgb(230, 30, 110) ;
 color: rgb(10, 9, 9);
 font-size: 30px;
 width: 66%;
@@ -59,7 +59,7 @@ box-shadow: 30px;
 }
 
 button:hover {
-background-color: rgb(221, 23, 135);
+background-color: rgb(230, 35, 100);
 box-shadow: 15px;
 }
 
