@@ -2,7 +2,6 @@ var startButton = document.querySelector("#startbutton");
 
 var answerButtons = document.querySelector(".choices")
 
-
 // var question = document.getElementById("questions");
 
 var choicesEl = Array.from(document.getElementsByClassName("choices"));
@@ -12,7 +11,7 @@ var currentQuestions = {
 };
 var answer = true
 
-var timeLeft = 10;
+var timeLeft = 30;
 
 var points = 0;
 
@@ -56,10 +55,8 @@ var questions = [
   },
 ]
 
-
 var score = 100
 let availableQuestions = [...questions]
-
 
 startGame = () => {
   questionCount = 0;
@@ -68,6 +65,7 @@ startGame = () => {
   console.log(availableQuestions);
   document.getElementById("quiz").classList.remove("hide")
   getNewQuestion();
+  startTimer();
 };
 
 getNewQuestion = () => {
@@ -94,11 +92,10 @@ var timerEl = document.querySelector(".timer");
 var mainEl = document.querySelector("main");
 
 
-
 function startTimer() {
   var timerInterval = setInterval(function () {
     timeLeft--;
-    timerEl.textContent = timeLeft + "Time Left"
+    timerEl.textContent = timeLeft + " Seconds Left"
     if (timeLeft === 0) {
       clearInterval(timerInterval)
       return;
@@ -108,10 +105,10 @@ function startTimer() {
     1000);
 }
 
-function startGame() {
-  startTimer()
+// function startGame() {
+//   startTimer()
   //in startGame remove class hide from question/answer container, needs an id in div, then hide start 
-};
+// };
 console.log(startGame)
 
 startButton.addEventListener("click", startGame);

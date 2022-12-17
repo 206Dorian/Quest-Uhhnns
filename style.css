@@ -46,15 +46,14 @@ p {
   background-color: rgb(67, 166, 215);
 }
 
-button
-{
-background-color: rgb(230, 30, 110) ;
+button {
+background-color: rgb(97, 108, 122) ;
 color: rgb(10, 9, 9);
 font-size: 30px;
-width: 66%;
-height: 66%;
+width: 90%;
+height: 90%;
 margin: 10px 10px;
-border-radius: 20px;
+border-radius: 10px;
 box-shadow: 30px;
 }
 
@@ -64,12 +63,12 @@ box-shadow: 15px;
 }
 
 
-#scores-button {
+/* #scores-button {
   background-color: #3e8e41;
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-} 
+}  */
 
 
 
