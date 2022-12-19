@@ -66,6 +66,7 @@ startGame = () => {
   document.getElementById("quiz").classList.remove("hide")
   getNewQuestion();
   startTimer();
+  startButton.disabled = true;
 };
 
 getNewQuestion = () => {
