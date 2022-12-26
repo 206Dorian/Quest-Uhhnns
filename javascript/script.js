@@ -2,10 +2,18 @@ var startButton = document.querySelector("#startbutton");
 
 var answerButtons = document.querySelector(".choices")
 
+var choiceOne =document.querySelector("#answer1")
+var choiceTwo =document.querySelector("#answer2")
+var choiceThree =document.querySelector("#answer3")
+var choiceFour =document.querySelector("#answer4")
+var choiceFive =document.querySelector("#answer5")
+
+
+
 // var question = document.getElementById("questions");
 
 var choicesEl = Array.from(document.getElementsByClassName("choices"));
-console.log(choicesEl);
+
 
 var currentQuestions = {
 };
@@ -56,33 +64,58 @@ var questions = [
 ]
 
 var score = 100
-let availableQuestions = [...questions]
+// let availableQuestions = [...questions]
 
 startGame = () => {
-  questionCount = 0;
+  // questionCount = 0;
   score = 0
-  availableQuestions = [...questions]
-  console.log(availableQuestions);
+  // availableQuestions = [...questions]
+  // console.log(availableQuestions);
   document.getElementById("quiz").classList.remove("hide")
   getNewQuestion();
   startTimer();
   startButton.disabled = true;
 };
 
+// const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+// let currentQuestion = availableQuestions[questionCount];
+
 getNewQuestion = () => {
   console.log(questionCount)
-  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-  let currentQuestion = availableQuestions[questionIndex];
+ var currentQuestion = questions[questionCount]
   console.log(currentQuestion)
   document.getElementById("question").textContent = currentQuestion.question;
 
   for (i = 0; i < currentQuestion.choices.length; i++) {
     choicesEl[i].textContent = currentQuestion.choices[i]
+    const optionButton = document.querySelector("answer"+i)
+    choicesEl[i].append(optionButton)
   }
-  questionCount++;
+  // questionCount++;
+  // console.log(questionCount)
 }
 
+function checkAnswer (event){
+  let clickAnswer = event.target.textContent
+  let correctAnswer = questions[questionCount].answer
 
+  if (clickAnswer===correctAnswer){
+    points+=5
+    
+  }
+  else{
+    timeLeft-5
+points-=5
+  }
+questionCount++
+if (questions.length>questionCount){
+  getNewQuestion()
+  
+} else {
+  console.log("quiz done")
+  //quizdone(cleartimer) 
+}
+}
 // choices.forEach(choice =.> {
 //   var number = choice.dataset["number"];
 //   choice.innerText = currentQuestions["choice + number"];
@@ -114,16 +147,4 @@ console.log(startGame)
 
 startButton.addEventListener("click", startGame);
 
-for (i = 0; i < choicesEl.length; i++) {
-  choicesEl[i].addEventListener("click",function(event){
-    console.log(event.target.textContent)
-    // if
-    // then
-  })
-}
-questionCount++;
-//when timer starts questions appear, startGame 
-
-//update question content create var in JS, update text content 
-
-//tell Js which element to change, then update text cont accoringly
+// Quiz end statement 

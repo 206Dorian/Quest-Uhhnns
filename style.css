@@ -4,8 +4,14 @@ body {
 color: rgb(17, 66, 109);  
  background-image: linear-gradient(rgb(65, 65, 239) ,rgb(37, 200, 225), rgb(45, 198, 228), rgb(65, 65, 214))
  
-
 } 
+
+.choices:hover{
+
+  cursor:pointer;
+  
+}
+
 .hide{
   display:none;
 }
@@ -14,7 +20,6 @@ text-align: center;
 font-size:30px;
 text-shadow: navy;
 text-shadow: 30px;
-
 }
 
 h2{
